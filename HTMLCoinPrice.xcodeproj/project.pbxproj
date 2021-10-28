@@ -19,6 +19,12 @@
 		AB51B64427274EFC007D6034 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51B64327274EFC007D6034 /* ComplicationController.swift */; };
 		AB51B64627274EFD007D6034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB51B64527274EFD007D6034 /* Assets.xcassets */; };
 		AB51B64927274EFD007D6034 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB51B64827274EFD007D6034 /* Preview Assets.xcassets */; };
+		AB51B65B27274FE0007D6034 /* HitbtcData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51B65A27274FE0007D6034 /* HitbtcData.swift */; };
+		AB51B65C27274FE0007D6034 /* HitbtcData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51B65A27274FE0007D6034 /* HitbtcData.swift */; };
+		AB51B65E27275009007D6034 /* ExchangeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51B65D27275009007D6034 /* ExchangeRequest.swift */; };
+		AB51B65F27275009007D6034 /* ExchangeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51B65D27275009007D6034 /* ExchangeRequest.swift */; };
+		AB51B66127275048007D6034 /* ExchangeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51B66027275048007D6034 /* ExchangeData.swift */; };
+		AB51B66227275048007D6034 /* ExchangeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51B66027275048007D6034 /* ExchangeData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +84,9 @@
 		AB51B64527274EFD007D6034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB51B64827274EFD007D6034 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB51B64A27274EFD007D6034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB51B65A27274FE0007D6034 /* HitbtcData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitbtcData.swift; sourceTree = "<group>"; };
+		AB51B65D27275009007D6034 /* ExchangeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRequest.swift; sourceTree = "<group>"; };
+		AB51B66027275048007D6034 /* ExchangeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		AB51B61827274EF9007D6034 = {
 			isa = PBXGroup;
 			children = (
+				AB51B65827274FAE007D6034 /* data */,
 				AB51B62327274EF9007D6034 /* HTMLCoinPrice */,
 				AB51B63327274EFB007D6034 /* HTMLCoinPrice WatchKit App */,
 				AB51B63E27274EFC007D6034 /* HTMLCoinPrice WatchKit Extension */,
@@ -165,6 +175,16 @@
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
+		};
+		AB51B65827274FAE007D6034 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				AB51B65D27275009007D6034 /* ExchangeRequest.swift */,
+				AB51B65A27274FE0007D6034 /* HitbtcData.swift */,
+				AB51B66027275048007D6034 /* ExchangeData.swift */,
+			);
+			path = data;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -237,6 +257,7 @@
 					};
 					AB51B62E27274EFB007D6034 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 					AB51B63927274EFC007D6034 = {
 						CreatedOnToolsVersion = 13.0;
@@ -297,8 +318,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB51B65E27275009007D6034 /* ExchangeRequest.swift in Sources */,
 				AB51B62727274EF9007D6034 /* ContentView.swift in Sources */,
 				AB51B62527274EF9007D6034 /* HTMLCoinPriceApp.swift in Sources */,
+				AB51B65B27274FE0007D6034 /* HitbtcData.swift in Sources */,
+				AB51B66127275048007D6034 /* ExchangeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +332,10 @@
 			files = (
 				AB51B64027274EFC007D6034 /* ContentView.swift in Sources */,
 				AB51B64227274EFC007D6034 /* HTMLCoinPriceApp.swift in Sources */,
+				AB51B66227275048007D6034 /* ExchangeData.swift in Sources */,
 				AB51B64427274EFC007D6034 /* ComplicationController.swift in Sources */,
+				AB51B65C27274FE0007D6034 /* HitbtcData.swift in Sources */,
+				AB51B65F27275009007D6034 /* ExchangeRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +537,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R4U6H5V8R8;
@@ -518,12 +546,19 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "HTMLCoinPrice WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = JonathanVeg.HTMLCoinPrice;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = JonathanVeg.HTMLCoinPrice.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "New Group/HTMLCoinPrice WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 8.0;
@@ -536,6 +571,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R4U6H5V8R8;
@@ -544,12 +580,18 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "HTMLCoinPrice WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = JonathanVeg.HTMLCoinPrice;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = JonathanVeg.HTMLCoinPrice.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "New Group/HTMLCoinPrice WatchKit App-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
